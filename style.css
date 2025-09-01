@@ -1,0 +1,149 @@
+/* Reset and base styles */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: #333
+}
+
+/* Navbar */
+.Navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #222;
+    color: #fff;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a:hover {
+    color:#1abc9c;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #1abc9c;
+    color: white;
+}
+
+.hero span {
+    color: #fff700;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #1abc9c;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.btn:hover {
+  background-color: #121820;
+  transform: scale(1.07);
+}
+
+/* Section */
+.section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    margin-top: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0,1);
+}
+
+/* Footer */
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px){
+    .nav-links {
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .menu-toggle{
+        display: block;
+    }
+}
+
+/* Reset default styles */
+.button-container {
+  text-align: center;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #0151ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+}
