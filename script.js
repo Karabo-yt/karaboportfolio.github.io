@@ -8,5 +8,6 @@ menuToggle.addEventListener('click', () =>{
 });
 
 document.getElementById("myButton").addEventListener("click", function () {
-  alert("Join kaysociety against the threats or be a victim, contacts provided below thank you,its on you friend!!! :) ");
+  alert("Join kaysociety against the threats or be a victim, contacts provided below thank you, its on you friend!!! :) ");
 });
+
